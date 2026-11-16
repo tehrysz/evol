@@ -4,13 +4,6 @@ Site interativo sobre a história geológica da Terra, do Hadeano ao Cenozoico.
 
 O Evol é um projeto de extensão do componente curricular de Paleontologia, produzido pelos alunos do 7º período do curso de Ciências Biológicas da PUC-Campinas e orientado pelo Prof. Dr. Rafael Farias.
 
-## Conteúdo
-
-- **Início**: relógio geológico e linha do tempo proporcional dos quatro éons.
-- **Éons**: Hadeano, Arqueano, Proterozoico e Fanerozoico, cada um com texto, dados rápidos, índice da página e linha do tempo lateral.
-- **Eras do Fanerozoico**: Paleozoico, Mesozoico e Cenozoico.
-- **Galeria**: registros das aulas práticas (rochas, minerais e fósseis), com visualização ampliada.
-- **Referências**: fontes consultadas, em formato ABNT.
 
 ## Tecnologias
 
@@ -31,9 +24,6 @@ npm run preview   # servidor local para conferir o build
 
 O build usa caminhos relativos (`base: './'`) e a navegação é feita por hash (`#hadeano`, `#galeria`…), então o conteúdo de `dist/` pode ser publicado em qualquer hospedagem estática, inclusive em subpastas, como o GitHub Pages, sem configuração de servidor.
 
-### Publicação no GitHub Pages
-
-O workflow `.github/workflows/deploy.yml` faz o build e publica a cada push na branch `main`. Para ativar: em *Settings → Pages*, escolha **GitHub Actions** como fonte. O workflow usa `npm ci`, então o `package-lock.json` (gerado por `npm install`) precisa estar commitado.
 
 ## Estrutura
 
